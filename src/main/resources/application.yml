@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-security-oauth-endcoding-bug
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          introspection-uri: http://localhost:7171/introspect
+          client-id: someClientId
+          client-secret: h25spw7I_y0Kt=s5NPo
+
+logging:
+  level:
+    root: debug
+    org:
+      springframework:
+        security: trace
